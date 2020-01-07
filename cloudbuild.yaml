@@ -1,4 +1,16 @@
 steps:
+# Uses the ubuntu build step:
+# to run a shell script; and
+# set env variables for its execution
+- name: 'ubuntu'
+  args: ['bash', './myscript.sh']
+  env:
+  - 'BUILD=$BUILD_ID'
+  - 'port=80'
+  - 'JWT_SECRET=rahasiadong'
+  - 'CLIENT_ID=628697528399-tm5hqkb025uttnahfoj889flu2jg3hvm.apps.googleusercontent.com' 
+  - 'CLIENT_SECRET=iY49zN-q3fNFBunSl6QIs6RJ'
+  - 'MONGO_DB=mongodb+srv://royhanm23:admin123456@miniwp-kvfe5.gcp.mongodb.net/test?retryWrites=true&w=majority'  
 - name: "gcr.io/cloud-builders/npm"
   args: ["install"]
 - name: "gcr.io/cloud-builders/npm"
