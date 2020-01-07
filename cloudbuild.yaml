@@ -12,8 +12,6 @@ steps:
   - "MONGO_DB='mongodb+srv://royhanm23:admin123456@miniwp-kvfe5.gcp.mongodb.net/test?retryWrites=true&w=majority'"  
 - name: "gcr.io/cloud-builders/npm"
   args: ["install"]
-- name: "gcr.io/cloud-builders/npm"
-  args: ["test"]
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
 timeout: "1600s"
