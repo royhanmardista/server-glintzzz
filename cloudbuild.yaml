@@ -3,7 +3,6 @@ steps:
 # to run a shell script; and
 # set env variables for its execution
 - name: 'ubuntu'
-  args: ['bash', './myscript.sh']
   env:
   - 'BUILD=$BUILD_ID'
   - 'port=80'
