@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "test ci/cd",
   "main": "app.js",
   "dependencies": {
     "axios": "^0.19.0",
@@ -29,5 +29,16 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royhanmardista/server-glintzzz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/royhanmardista/server-glintzzz/issues"
+  },
+  "homepage": "https://github.com/royhanmardista/server-glintzzz#readme"
 }
