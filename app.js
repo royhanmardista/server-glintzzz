@@ -18,7 +18,7 @@ const port = process.env.port || 3000
 const errorHandler = require('./middlewares/errorHandler')
 const router = require('./routes')
 // connect to mongoose
-mongoose.connect(process.env.MONGO_DB, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify : false, useCreateIndex: true })
+mongoose.connect('mongodb+srv://royhanm23:admin123456@miniwp-kvfe5.gcp.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify : false, useCreateIndex: true })
     .then(resolve => {
         console.log(`server is connected !!`)
     })
